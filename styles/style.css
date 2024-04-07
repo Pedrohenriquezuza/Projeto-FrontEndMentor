@@ -1,0 +1,316 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap');/*HEEBOO*/ 
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); /*BARLOW*/
+
+
+/*CONFIG GERAIS*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --font-Barlow: "Barlow", sans-serif;
+    --font-Heebo: "Heebo", sans-serif;
+    --colorazul: #3E54A2;
+    --colorvermelha: #ED2C48;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style-type: none;
+}
+
+html, body{
+    width: 100vw;
+    height: 100vh;
+}
+
+header{
+    width: 100%;
+}
+
+body{
+    text-align: center;
+    background-color: #F4F6F7;
+}
+
+main .interface{
+    padding: 30px 0px;
+    margin: 0px 1.4em;
+}
+
+/*POP-UP*/
+
+header .popup-contrate{
+    text-align: center;
+    padding: 15px;
+    background-color: #3E54A2;
+    color: white;
+    font-family: "Heebo", sans-serif;
+    font-weight: 600;
+}
+
+header .txt-popup p, a{
+    font-size: 0.9em;
+}
+
+header .txt-popup{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 6px;
+    align-items: center;
+    margin-bottom: 6px;
+    padding: 0px 10px;
+}
+
+header .popup-contrate a{
+    color: white;
+}
+
+/*LOGO E MENU*/
+
+header .logo-menu{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 15px;
+}
+
+header .logo-nav img{
+    width: 45px;
+}
+
+
+header span#burger{
+    display: block;
+    font-size: 2.8em;
+    padding: 2px 0px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+header menu{
+    display: none;
+}
+
+header menu ul li a{
+    text-decoration: none;
+    font-size: 1.2em;
+    display: block;
+    padding: 15px;
+    background-color: white;
+    margin-bottom: 2px;
+    color: rgb(0, 0, 0);
+    transition: 0.2s;
+    text-align: center;
+    box-shadow: 0px 1px 0px black;
+    font-family: var(--font-Barlow);
+    font-weight: 500;
+}
+
+header menu a#header-btn-github{
+    margin: 10px auto;
+    background-color: #1C2022;
+    display: block;
+    max-width: 75%;
+}
+
+
+/*SECTION01-IMPROVE*/
+
+
+
+main section#section01-improve img{
+    width: 90%;
+}
+
+main section#section01-improve h1{
+    font-size: 2.6em;
+    font-family: var(--font-Barlow);
+    color: var(--colorazul);
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 0.3em;
+}
+
+main section#section01-improve p{
+    color: rgb(114, 114, 114);
+    line-height: 23px;
+    margin-bottom: 15px;
+}
+
+main .btn-github i{
+    color: white;
+    font-size: 1.6em;
+    margin-left: 3px;
+    text-align: center;
+    justify-content: center;
+}
+
+.btn-github{
+    padding: 15px 30px;
+    background-color: var(--colorvermelha);
+    color: white;
+    display: inline-block;
+    border-radius: 30px;
+    text-decoration: none;
+    font-style: italic;
+    font-family: var(--font-Barlow);
+    font-weight: bolder;
+    font-size: 0.8em;
+    margin-bottom: 1em;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+/*SECTION 02 - REVIEWS */
+
+main section#section02-review .box01, .box02{
+    background-color: white;
+    padding: 15px 10px 10px;
+    border-radius: 10px;
+}
+
+main section#section02-review .flex div i{
+    font-size: 3rem;
+    color: rgb(224, 224, 224);
+    margin-bottom: 1rem;
+}
+
+main section#section02-review .flex div p{
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 1rem;
+    font-weight: 100;
+    color: rgba(49, 49, 49, 0.829);
+}
+
+main section#section02-review img{
+    width: 75px;
+    height: 75px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+main section#section02-review .flex div .nome-review{
+    color: var(--colorazul);
+    font-family: var(--font-barlow);
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    margin-bottom: 0.3rem;
+}
+
+main section#section02-review .flex div .emprego{
+    font-size: 0.8rem;
+    color: rgba(0, 0, 0, 0.555);
+}
+
+
+
+
+main section#section02-review .flex{
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+main section#section02-review .interface{
+    padding: 30px 0px;
+    margin: 0px 0.6em;
+}
+main section#section02-review{
+    background-color: #F4F6F7;
+}
+
+/*SECTION03- TUTORIAL*/
+
+main section.section03-tutorial{
+    background-color: white;
+}
+main section.section03-tutorial img{
+    width: 350px;
+    margin-bottom: 2.5rem;
+}
+
+main section.section03-tutorial #emoji-tutorial{
+    font-size: 1.8rem;
+    display: inline-block;
+    padding: 15px;
+    border-radius: 50%;
+    background-color: #F0F4F4;
+    margin-bottom: 1rem;
+}
+
+main section.section03-tutorial h3{
+    font-family: var(--font-barlow);
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+main section.section03-tutorial p{
+    color: #858585;
+    margin-bottom: 2rem;
+    line-height: 23px;
+}
+
+
+/*SECTION - JOIN PORTFOLIO PROJECTS*/
+
+main section#join-portfolio-projects h1{
+    color: var(--colorazul);
+    font-size: 2.5rem;
+    font-weight: 500;
+    padding: 0px 10px;
+    line-height: 50px;
+    margin-bottom: 1rem;
+}
+
+main section#join-portfolio-projects p{
+    margin-bottom: 1rem;
+    color: #858585;
+}
+
+/*FOOTER*/
+
+
+footer{
+    background-color: var(--colorazul);
+    color: white;
+    padding: 20px;
+}
+
+footer h3{
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+footer input{
+    padding: 7px;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+footer .sociais{
+    display: flex;
+    gap: 2rem;
+    text-align: center;
+    justify-content: center;
+}
+
+footer .sociais .box-social{
+    padding: 0px 5px;
+    color: white;
+    display: block;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+footer #copywrite{
+    font-size: 0.6rem;
+    
+}
