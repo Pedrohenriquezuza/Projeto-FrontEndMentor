@@ -74,7 +74,7 @@ Grandes Telas: acima De 1200px.*/
         font-size: 1rem;
         display: inline-block;
         padding: 15px;
-        background-color: #FAFAFA;
+        background-color: #F5F8F8;
         margin-bottom: 2px;
         color: rgb(0, 0, 0);
         transition: 0.2s;
@@ -83,8 +83,9 @@ Grandes Telas: acima De 1200px.*/
     }
 
     header menu ul li a:hover{
-        border-bottom: 1px solid black;
-        transition: 0.3s all;
+        border-bottom: 1px solid var(--colorvermelha);
+        transition: 0.4s all;
+        color: var(--colorvermelha);
     }
     header menu a#header-btn-github{
         margin: 10px 5px;
@@ -158,17 +159,6 @@ Grandes Telas: acima De 1200px.*/
         margin: auto;
     }
 
-    main section#section03-tutorial-2 .txt-escapetutorial{
-        position: relative;
-        right: 45%;
-    }
-    main section#section03-tutorial-2 img{
-        position: relative;
-        left: 55%;
-        align-items: center;
-        justify-content: center;
-    }
-
     /*FOOTER*/
 
     footer h3{
@@ -192,9 +182,282 @@ Grandes Telas: acima De 1200px.*/
         width: 80px;
     }
 
+    
     footer .sociais .box-social{
         font-size: 3rem;
         margin: 1rem 0px;
+        transition: 0.4s all;
+    }
+
+    footer .sociais .box-social:hover{
+        transform: scale(1.15);
+    }
+
+    footer p#copywrite{
+        font-size: 0.9rem;
+    }
+
+}
+
+
+            /*TELA DE PC*/
+@media screen and (min-width: 993px){
+    html{
+        width: 100%;
+    }
+
+    main .interface{
+        padding: 5rem 0px;
+        margin: 0px 20rem;
+    }    
+
+    /*POPUP*/
+
+    header .popup-contrate{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        justify-content: center;
+        padding: 5px;
+    }
+
+    header .txt-popup{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        gap: 6px;
+        align-items: center;
+        margin-bottom: none;
+        padding: 7px 0px 0px 0px;
+        margin-right: 6px;
+    }
+
+    header .txt-popup p, a{
+        font-size: 0.8  em;
+    }
+
+    header .popup-contrate a{
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    /*HEADER LOGO-MENU*/
+
+    header span#burger{
+        display: none;
+    }
+
+    header menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-right: 1.5rem;
+    }
+
+    header menu ul{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header menu ul li a{
+        text-decoration: none;
+        font-size: 1rem;
+        display: inline-block;
+        padding: 15px;
+        background-color: #F5F8F8;
+        margin-bottom: 2px;
+        color: rgb(0, 0, 0);
+        transition: 0.2s;
+        box-shadow: none;
+        transition: 0.3s all;
+    }
+
+    header menu ul li a:hover{
+        border-bottom: 1px solid var(--colorvermelha);
+        transition: 0.4s all;
+        color: var(--colorvermelha);
+    }
+    header menu a#header-btn-github{
+        margin: 10px 5px;
+        display: inline-block;
+        padding: 15px 25px;
+        max-width: 75%;
+        text-align: center;
+        align-items: center;
+        justify-content: center
+    }
+
+    header .logo-nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    /*SECTION01- IMPROVE*/
+
+    main section#section01-imrpove .interface{
+        padding: 5rem 0px;
+        margin: 0px 1.4em;
+    }
+
+    main section#section01-improve .flex{
+        display: flex;
+        flex-direction: row;
+    }
+
+    main section#section01-improve img{
+        width: 55%;
+    }
+
+    main section#section01-improve .txt-links{
+        text-align: left;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        padding-right: 5rem;
+    }
+
+    main section#section01-improve h1{
+        font-size: 2.7em;
+        font-family: var(--font-Barlow);
+        color: var(--colorazul);
+        font-weight: 600;
+        letter-spacing: 1px;
+        margin-bottom: 1.5rem;
+        width: 500px;
+    }
+
+    main section#section01-improve p{
+        margin-bottom: 1.5rem;
+    }
+
+    .btn-github{
+        padding: 15px 40px;
+        background-color: var(--colorvermelha);
+        color: white;
+        display: inline-block;
+        border-radius: 30px;
+        text-decoration: none;
+        font-style: italic;
+        font-family: var(--font-Barlow);
+        font-weight: bolder;
+        font-size: 0.9rem;
+        margin-bottom: 1em;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    /*SECTION02 - REVIEWS*/
+
+    main section#section02-review .interface{
+        padding: 3rem 0px;
+        margin: 0px 1.4em;
+    }
+
+    main section#section02-review .flex{
+        display: flex;
+        flex-direction: row;
+        
+    }
+    main section#section02-review .box01, .box02{
+        padding: 25px 15px 15px;
+        width: 500px;
+    }
+
+    main section#section02-review .box01{
+        margin-left: 350px;
+    }
+
+    main section#section02-review .flex div p{
+        line-height: 1.9rem;
+    }
+
+    /*SECTION 03 - TUTORIAL*/
+
+    main section.section03-tutorial .interface{
+        padding: 15px 0px;
+        margin: 0px 1.4em;
+    }
+    main section.section03-tutorial .flex{
+        display: flex;
+        margin: auto;
+        gap: 0rem;
+    }
+
+    main section.section03-tutorial .txt-escapetutorial p#emoji-tutorial{
+        margin-bottom: 2rem;
+        font-size: 2rem;
+    }
+
+    main section.section03-tutorial h3{
+        font-family: var(--font-barlow);
+        font-size: 2.5rem;
+        font-weight: 500;
+        margin-bottom: 2rem;
+    }
+
+    main section.section03-tutorial .txt-escapetutorial{
+        text-align: left;
+        align-items: center;
+        justify-content: center;
+        width: 500px;
+        margin: auto;
+    }
+
+    main section.section03-tutorial img{
+        width: 600px;
+        align-items: center;
+        justify-content: center;
+        display: block;
+        margin: 50px 0px 15px 250px;
+    }
+
+    /*FOOTER*/
+
+    footer h3{
+        font-size: 1.5rem;
+        font-family: var(--font-Heebo);
+    }
+
+    footer input{
+        width: 200px;
+    }
+
+    footer input[type=text]{
+        padding: 17px;
+    }
+
+    footer input[type=submit]{
+        background-color: var(--colorvermelha);
+        color: black;
+        color: white;
+        font-weight: 600;
+        padding: 17px;
+        width: 80px;
+    }
+
+    footer .sociais .box-social{
+        font-size: 3rem;
+        margin: 1rem 0px;
+    }
+
+    footer .sociais .box-social{
+        font-size: 3rem;
+        margin: 1rem 0px;
+        transition: 0.4s all;
+    }
+
+    footer .sociais .box-social:hover{
+        transform: scale(1.15);
+    }
+
+    footer p#copywrite{
+        font-size: 0.9rem;
     }
 
     footer p#copywrite{
