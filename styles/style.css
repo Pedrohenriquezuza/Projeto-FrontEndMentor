@@ -272,6 +272,20 @@ main section#join-portfolio-projects p{
     color: #858585;
 }
 
+/*BTN- BACK TO TOP*/
+
+#link-topo{
+    color: white;
+    background-color: var(--colorvermelha);
+    padding: 15px;
+    font-size: 1.1rem;
+    border-radius: 50%;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.568);
+}
+
 /*FOOTER*/
 
 

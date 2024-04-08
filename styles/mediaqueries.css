@@ -197,6 +197,12 @@ Grandes Telas: acima De 1200px.*/
         font-size: 0.9rem;
     }
 
+    #link-topo{
+        font-size: 1.3rem;
+        right: 25px;
+        bottom: 25px;
+    }
+
 }
 
 
@@ -466,6 +472,12 @@ Grandes Telas: acima De 1200px.*/
 
     footer p#copywrite{
         font-size: 0.9rem;
+    }
+
+    #link-topo{
+        font-size: 1.3rem;
+        right: 25px;
+        bottom: 25px;
     }
 
 }
