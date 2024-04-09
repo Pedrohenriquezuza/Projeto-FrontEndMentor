@@ -13,7 +13,7 @@
     <title>ProjetoMassa</title>
   </head>
   <body>
-    <header>
+    <header id="topo">
       <div class="popup-contrate">
         <div class="txt-popup">
           <span class="material-icons md-18">travel_explore</span>
@@ -154,8 +154,6 @@
                 </div><!--flex-->
               </div><!--interface-->
             </section><!--join-portfolio-projects-->
-            
-            <a href="#" id="link-topo"><i class="fa-solid fa-arrow-up"></i></a>
     </main>
 
     <footer>
@@ -173,16 +171,14 @@
       </div>
 
       <p id="copywrite">© Frontend Mentor 2019 - 2024</p>
+
+      <div data-scroll="suave" data-anima="scroll">
+        <a href="#topo" id="link-topo"><div class="topo"><i class="fa-solid fa-arrow-up"></i></div></a>
+      </div>
     </footer>
 
-    <script>
-      function clickMenu() {
-        if (itens.style.display == "block") {
-          itens.style.display = "none";
-        } else {
-          itens.style.display = "block";
-        }
-      }
-    </script>
+    <script src="js/menu.js"></script>
+    <script src="js/scroll.js"></script>
+
   </body>
 </html>
