@@ -207,7 +207,7 @@ Grandes Telas: acima De 1200px.*/
 
 
             /*TELA DE PC*/
-@media screen and (min-width: 993px){
+@media screen and (min-width: 992px){
     html, body{
         width: 100%;
     }
@@ -321,7 +321,8 @@ Grandes Telas: acima De 1200px.*/
     }
 
     main section#section01-improve img{
-        width: 55%;
+        width: 60%;
+        display: block;
     }
 
     main section#section01-improve .txt-links{
@@ -330,6 +331,7 @@ Grandes Telas: acima De 1200px.*/
         justify-content: center;
         margin: auto;
         padding-right: 5rem;
+        width: 100%;
     }
 
     main section#section01-improve h1{
@@ -366,7 +368,7 @@ Grandes Telas: acima De 1200px.*/
 
     main section#section02-review .interface{
         padding: 3rem 0px;
-        margin: 0px 1.4em;
+        margin: 0px 1.5em;
     }
 
     main section#section02-review .flex{
@@ -376,7 +378,7 @@ Grandes Telas: acima De 1200px.*/
     }
     main section#section02-review .box01, .box02{
         padding: 25px 15px 15px;
-        width: 500px;
+        width: 30%;
     }
 
     main section#section02-review .box01{
